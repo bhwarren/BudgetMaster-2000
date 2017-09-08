@@ -1,0 +1,345 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/local/bin/npm', 'install', 'passport' ]
+2 info using npm@3.9.5
+3 info using node@v7.10.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData passport
+8 silly fetchNamedPackageData passport
+9 silly mapToRegistry name passport
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'passport',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'passport',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/passport
+14 verbose request uri https://registry.npmjs.org/passport
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 3:40:17 PM
+17 verbose request id 1a919b226ee14ac8
+18 verbose etag "D47FONQQE5XUSHWNGHJ0LYNRA"
+19 http request GET https://registry.npmjs.org/passport
+20 http 200 https://registry.npmjs.org/passport
+21 verbose headers { server: 'nginx/1.10.1',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'last-modified': 'Fri, 08 Sep 2017 04:00:37 GMT',
+21 verbose headers   etag: 'W/"59b215e5-b847"',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'content-length': '8915',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Fri, 08 Sep 2017 19:40:17 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   age: '3',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-jfk8121-JFK',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '99',
+21 verbose headers   'x-timer': 'S1504899617.371564,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding, Accept' }
+22 silly get cb [ 200,
+22 silly get   { server: 'nginx/1.10.1',
+22 silly get     'content-type': 'application/json',
+22 silly get     'last-modified': 'Fri, 08 Sep 2017 04:00:37 GMT',
+22 silly get     etag: 'W/"59b215e5-b847"',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'content-length': '8915',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Fri, 08 Sep 2017 19:40:17 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '3',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-jfk8121-JFK',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '99',
+22 silly get     'x-timer': 'S1504899617.371564,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding, Accept' } ]
+23 verbose get saving passport to /home/bhwarren/.npm/registry.npmjs.org/passport/.cache.json
+24 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule passport@0.4.0 checking installable status
+38 silly cache add args [ 'passport', null ]
+39 verbose cache add spec passport
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'passport',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'passport',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed passport@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for passport
+43 info addNameTag [ 'passport', 'latest' ]
+44 silly mapToRegistry name passport
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'passport',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   name: 'passport',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/passport
+49 verbose addNameTag registry:https://registry.npmjs.org/passport not in flight; fetching
+50 verbose get https://registry.npmjs.org/passport not expired, no request
+51 silly addNameTag next cb for passport with tag latest
+52 silly addNamed passport@0.4.0
+53 verbose addNamed "0.4.0" is a plain semver version for passport
+54 silly mapToRegistry name passport
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'passport',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   name: 'passport',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/passport
+59 verbose addRemoteTarball https://registry.npmjs.org/passport/-/passport-0.4.0.tgz not in flight; adding
+60 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport/-/passport-0.4.0.tgz',
+60 verbose addRemoteTarball   'c5095691347bd5ad3b5e180238c3914d16f05811' ]
+61 info retry fetch attempt 1 at 3:40:17 PM
+62 info attempt registry request try #1 at 3:40:17 PM
+63 http fetch GET https://registry.npmjs.org/passport/-/passport-0.4.0.tgz
+64 http fetch 200 https://registry.npmjs.org/passport/-/passport-0.4.0.tgz
+65 silly fetchAndShaCheck shasum c5095691347bd5ad3b5e180238c3914d16f05811
+66 verbose addTmpTarball /tmp/npm-21891-d684aacd/registry.npmjs.org/passport/-/passport-0.4.0.tgz not in flight; adding
+67 verbose addTmpTarball already have metadata; skipping unpack for passport@0.4.0
+68 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+69 silly cache afterAdd passport@0.4.0
+70 verbose afterAdd /home/bhwarren/.npm/passport/0.4.0/package/package.json not in flight; writing
+71 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+72 verbose afterAdd /home/bhwarren/.npm/passport/0.4.0/package/package.json written
+73 silly fetchNamedPackageData passport-strategy
+74 silly mapToRegistry name passport-strategy
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry data Result {
+77 silly mapToRegistry   raw: 'passport-strategy',
+77 silly mapToRegistry   scope: null,
+77 silly mapToRegistry   name: 'passport-strategy',
+77 silly mapToRegistry   rawSpec: '',
+77 silly mapToRegistry   spec: 'latest',
+77 silly mapToRegistry   type: 'tag' }
+78 silly mapToRegistry uri https://registry.npmjs.org/passport-strategy
+79 silly fetchNamedPackageData pause
+80 silly mapToRegistry name pause
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry data Result {
+83 silly mapToRegistry   raw: 'pause',
+83 silly mapToRegistry   scope: null,
+83 silly mapToRegistry   name: 'pause',
+83 silly mapToRegistry   rawSpec: '',
+83 silly mapToRegistry   spec: 'latest',
+83 silly mapToRegistry   type: 'tag' }
+84 silly mapToRegistry uri https://registry.npmjs.org/pause
+85 verbose request uri https://registry.npmjs.org/passport-strategy
+86 verbose request no auth needed
+87 info attempt registry request try #1 at 3:40:17 PM
+88 verbose etag "811P1IR12SU0EJ2BHYWRT18DR"
+89 http request GET https://registry.npmjs.org/passport-strategy
+90 verbose request uri https://registry.npmjs.org/pause
+91 verbose request no auth needed
+92 info attempt registry request try #1 at 3:40:17 PM
+93 verbose etag "AMXJRF8IYEDH2W7ZVFJ83MJR8"
+94 http request GET https://registry.npmjs.org/pause
+95 http 200 https://registry.npmjs.org/pause
+96 verbose headers { server: 'nginx/1.10.1',
+96 verbose headers   'content-type': 'application/json',
+96 verbose headers   'last-modified': 'Thu, 04 Feb 2016 18:31:12 GMT',
+96 verbose headers   etag: 'W/"56b398f0-10cc"',
+96 verbose headers   'content-encoding': 'gzip',
+96 verbose headers   'cache-control': 'max-age=300',
+96 verbose headers   'content-length': '1544',
+96 verbose headers   'accept-ranges': 'bytes',
+96 verbose headers   date: 'Fri, 08 Sep 2017 19:40:17 GMT',
+96 verbose headers   via: '1.1 varnish',
+96 verbose headers   age: '107',
+96 verbose headers   connection: 'keep-alive',
+96 verbose headers   'x-served-by': 'cache-jfk8140-JFK',
+96 verbose headers   'x-cache': 'HIT',
+96 verbose headers   'x-cache-hits': '1',
+96 verbose headers   'x-timer': 'S1504899618.606663,VS0,VE0',
+96 verbose headers   vary: 'Accept-Encoding, Accept' }
+97 silly get cb [ 200,
+97 silly get   { server: 'nginx/1.10.1',
+97 silly get     'content-type': 'application/json',
+97 silly get     'last-modified': 'Thu, 04 Feb 2016 18:31:12 GMT',
+97 silly get     etag: 'W/"56b398f0-10cc"',
+97 silly get     'content-encoding': 'gzip',
+97 silly get     'cache-control': 'max-age=300',
+97 silly get     'content-length': '1544',
+97 silly get     'accept-ranges': 'bytes',
+97 silly get     date: 'Fri, 08 Sep 2017 19:40:17 GMT',
+97 silly get     via: '1.1 varnish',
+97 silly get     age: '107',
+97 silly get     connection: 'keep-alive',
+97 silly get     'x-served-by': 'cache-jfk8140-JFK',
+97 silly get     'x-cache': 'HIT',
+97 silly get     'x-cache-hits': '1',
+97 silly get     'x-timer': 'S1504899618.606663,VS0,VE0',
+97 silly get     vary: 'Accept-Encoding, Accept' } ]
+98 verbose get saving pause to /home/bhwarren/.npm/registry.npmjs.org/pause/.cache.json
+99 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+100 silly resolveWithNewModule pause@0.0.1 checking installable status
+101 silly cache add args [ 'pause@0.0.1', null ]
+102 verbose cache add spec pause@0.0.1
+103 silly cache add parsed spec Result {
+103 silly cache add   raw: 'pause@0.0.1',
+103 silly cache add   scope: null,
+103 silly cache add   name: 'pause',
+103 silly cache add   rawSpec: '0.0.1',
+103 silly cache add   spec: '0.0.1',
+103 silly cache add   type: 'version' }
+104 silly addNamed pause@0.0.1
+105 verbose addNamed "0.0.1" is a plain semver version for pause
+106 silly mapToRegistry name pause
+107 silly mapToRegistry using default registry
+108 silly mapToRegistry registry https://registry.npmjs.org/
+109 silly mapToRegistry data Result {
+109 silly mapToRegistry   raw: 'pause',
+109 silly mapToRegistry   scope: null,
+109 silly mapToRegistry   name: 'pause',
+109 silly mapToRegistry   rawSpec: '',
+109 silly mapToRegistry   spec: 'latest',
+109 silly mapToRegistry   type: 'tag' }
+110 silly mapToRegistry uri https://registry.npmjs.org/pause
+111 verbose addNameVersion registry:https://registry.npmjs.org/pause not in flight; fetching
+112 verbose get https://registry.npmjs.org/pause not expired, no request
+113 silly cache afterAdd pause@0.0.1
+114 verbose afterAdd /home/bhwarren/.npm/pause/0.0.1/package/package.json not in flight; writing
+115 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+116 verbose afterAdd /home/bhwarren/.npm/pause/0.0.1/package/package.json written
+117 http 200 https://registry.npmjs.org/passport-strategy
+118 verbose headers { server: 'nginx/1.10.1',
+118 verbose headers   'content-type': 'application/json',
+118 verbose headers   'last-modified': 'Wed, 05 Jul 2017 04:55:01 GMT',
+118 verbose headers   etag: 'W/"595c7125-14db"',
+118 verbose headers   'content-encoding': 'gzip',
+118 verbose headers   'cache-control': 'max-age=300',
+118 verbose headers   'content-length': '1417',
+118 verbose headers   'accept-ranges': 'bytes',
+118 verbose headers   date: 'Fri, 08 Sep 2017 19:40:17 GMT',
+118 verbose headers   via: '1.1 varnish',
+118 verbose headers   age: '0',
+118 verbose headers   connection: 'keep-alive',
+118 verbose headers   'x-served-by': 'cache-jfk8121-JFK',
+118 verbose headers   'x-cache': 'HIT',
+118 verbose headers   'x-cache-hits': '1',
+118 verbose headers   'x-timer': 'S1504899618.587568,VS0,VE89',
+118 verbose headers   vary: 'Accept-Encoding, Accept' }
+119 silly get cb [ 200,
+119 silly get   { server: 'nginx/1.10.1',
+119 silly get     'content-type': 'application/json',
+119 silly get     'last-modified': 'Wed, 05 Jul 2017 04:55:01 GMT',
+119 silly get     etag: 'W/"595c7125-14db"',
+119 silly get     'content-encoding': 'gzip',
+119 silly get     'cache-control': 'max-age=300',
+119 silly get     'content-length': '1417',
+119 silly get     'accept-ranges': 'bytes',
+119 silly get     date: 'Fri, 08 Sep 2017 19:40:17 GMT',
+119 silly get     via: '1.1 varnish',
+119 silly get     age: '0',
+119 silly get     connection: 'keep-alive',
+119 silly get     'x-served-by': 'cache-jfk8121-JFK',
+119 silly get     'x-cache': 'HIT',
+119 silly get     'x-cache-hits': '1',
+119 silly get     'x-timer': 'S1504899618.587568,VS0,VE89',
+119 silly get     vary: 'Accept-Encoding, Accept' } ]
+120 verbose get saving passport-strategy to /home/bhwarren/.npm/registry.npmjs.org/passport-strategy/.cache.json
+121 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+122 silly resolveWithNewModule passport-strategy@1.0.0 checking installable status
+123 silly cache add args [ 'passport-strategy@1.x.x', null ]
+124 verbose cache add spec passport-strategy@1.x.x
+125 silly cache add parsed spec Result {
+125 silly cache add   raw: 'passport-strategy@1.x.x',
+125 silly cache add   scope: null,
+125 silly cache add   name: 'passport-strategy',
+125 silly cache add   rawSpec: '1.x.x',
+125 silly cache add   spec: '>=1.0.0 <2.0.0',
+125 silly cache add   type: 'range' }
+126 silly addNamed passport-strategy@>=1.0.0 <2.0.0
+127 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for passport-strategy
+128 silly addNameRange { name: 'passport-strategy',
+128 silly addNameRange   range: '>=1.0.0 <2.0.0',
+128 silly addNameRange   hasData: false }
+129 silly mapToRegistry name passport-strategy
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry https://registry.npmjs.org/
+132 silly mapToRegistry data Result {
+132 silly mapToRegistry   raw: 'passport-strategy',
+132 silly mapToRegistry   scope: null,
+132 silly mapToRegistry   name: 'passport-strategy',
+132 silly mapToRegistry   rawSpec: '',
+132 silly mapToRegistry   spec: 'latest',
+132 silly mapToRegistry   type: 'tag' }
+133 silly mapToRegistry uri https://registry.npmjs.org/passport-strategy
+134 verbose addNameRange registry:https://registry.npmjs.org/passport-strategy not in flight; fetching
+135 verbose get https://registry.npmjs.org/passport-strategy not expired, no request
+136 silly addNameRange number 2 { name: 'passport-strategy',
+136 silly addNameRange   range: '>=1.0.0 <2.0.0',
+136 silly addNameRange   hasData: true }
+137 silly addNameRange versions [ 'passport-strategy', [ '1.0.0' ] ]
+138 silly addNamed passport-strategy@1.0.0
+139 verbose addNamed "1.0.0" is a plain semver version for passport-strategy
+140 silly cache afterAdd passport-strategy@1.0.0
+141 verbose afterAdd /home/bhwarren/.npm/passport-strategy/1.0.0/package/package.json not in flight; writing
+142 verbose correctMkdir /home/bhwarren/.npm correctMkdir not in flight; initializing
+143 verbose afterAdd /home/bhwarren/.npm/passport-strategy/1.0.0/package/package.json written
+144 silly loadAllDepsIntoIdealTree Finishing
+145 silly idealTree:prePrune budget-master-2000@0.8.0
+145 silly idealTree:prePrune ├── passport-strategy@1.0.0
+145 silly idealTree:prePrune ├── passport@0.4.0
+145 silly idealTree:prePrune └── pause@0.0.1
+146 silly loadIdealTree Finishing
+147 silly currentTree budget-master-2000@0.8.0
+148 silly idealTree budget-master-2000@0.8.0
+148 silly idealTree ├── passport-strategy@1.0.0
+148 silly idealTree ├── passport@0.4.0
+148 silly idealTree └── pause@0.0.1
+149 silly generateActionsToTake Starting
+150 silly install generateActionsToTake
+151 warn checkPermissions Missing write access to /home/bhwarren/site/experimental/budget-master-2000/node_modules
+152 silly rollbackFailedOptional Starting
+153 silly rollbackFailedOptional Finishing
+154 silly runTopLevelLifecycles Starting
+155 silly runTopLevelLifecycles Finishing
+156 silly install printInstalled
+157 verbose stack Error: EACCES: permission denied, access '/home/bhwarren/site/experimental/budget-master-2000/node_modules'
+158 verbose cwd /home/bhwarren/site/experimental/budget-master-2000/public
+159 error Linux 4.4.0-38-generic
+160 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "install" "passport"
+161 error node v7.10.1
+162 error npm  v3.9.5
+163 error path /home/bhwarren/site/experimental/budget-master-2000/node_modules
+164 error code EACCES
+165 error errno -13
+166 error syscall access
+167 error Error: EACCES: permission denied, access '/home/bhwarren/site/experimental/budget-master-2000/node_modules'
+167 error  { Error: EACCES: permission denied, access '/home/bhwarren/site/experimental/budget-master-2000/node_modules'
+167 error   errno: -13,
+167 error   code: 'EACCES',
+167 error   syscall: 'access',
+167 error   path: '/home/bhwarren/site/experimental/budget-master-2000/node_modules' }
+168 error Please try running this command again as root/Administrator.
+169 verbose exit [ -13, true ]

@@ -1,0 +1,30 @@
+{
+  "name": "budget-master-2000",
+  "version": "0.8.0",
+  "description": "A simple budget manager",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhwarren/BudgetMaster-2000.git"
+  },
+  "author": "Bo Warren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhwarren/BudgetMaster-2000/issues"
+  },
+  "homepage": "https://github.com/bhwarren/BudgetMaster-2000#readme"
+}

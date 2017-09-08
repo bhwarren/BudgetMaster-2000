@@ -1,0 +1,115 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="BudgetMaster2000">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>BudgetMaster2000</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+        #todo-list              { margin-bottom:30px; }
+    </style>
+
+    <!-- SPELLS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="/budget/static/core.js"></script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS -->
+<body style="padding-top:0em" ng-controller="mainController">
+    <div class="container">
+
+        <!-- HEADER  -->
+        <div class="page-header text-center" style="margin-top:0px">
+            <h1>Budget Master 2000 </h1>
+        </div>
+
+
+        <!-- Charge LIST -->
+        <div id="charge-list" style="overflow-y: scroll; padding-bottom:5em" class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+
+                <div id="budget" class="row ">
+                    <table >
+                        <tr style="width:100%">
+                            <td style="width:40%">
+                                <h3 style="float:right">$</h3>
+                            </td>
+                            <td >
+                                    <h2>
+                                        <input type="text" ng-click="showBudgetButton()" style="width:95%;border:none; text-align: left;" placeholder=${{charges.budget} ng-model="charges.budget">
+                                    </h2>
+                            </td>
+                            <td>
+                                <span id="budgetButton" class="input-group-btn" style="visibility:hidden;padding-top:.5em;float:left">
+                                    <button class="btn btn-success btn-primary btn-lg" type="button" ng-click="setBudget()">update</button>
+                                </span>
+                            </td>
+                            <td  style="padding-top:1em;float:right"><button class="btn btn-danger btn-primary btn-lg " ng-click="clear()">Clear</button></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <!-- LOOP OVER THE TODOS IN $scope.todos -->
+                <div>
+                        <table class="table" >
+                            <tr ng-repeat="charge in charges.charges">
+                                <td>
+                                    <h3> {{charge.item}}  </h3>
+                                </td>
+                                <td>
+                                    <h3> ${{charge.charge}} </h3>
+                                </td>
+                            <tr>
+                        </table>
+
+                </div>
+
+                <hr>
+
+
+
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-fixed-bottom" style="background-color:#ffffff">
+            <div class="container-fluid">
+                <div id="balance" class="row col-sm-8 col-sm-offset-6">
+                    <h2> Balance: ${{charges.balance}} </h2>
+                </div>
+
+                <!-- FORM TO CREATE TODOS -->
+                <div id="todo-form" class="row">
+                    <div class="col-sm-8 col-sm-offset-3">
+                        <form>
+                            <div class="form-group">
+
+                                <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+                                <table ><tr>
+                                    <td style="width:55%"><input  type="text" class="form-control input-lg text-center" placeholder="Item" ng-model="formData.item"> </td>
+                                    <td><input  type="number" class="form-control input-lg text-center" placeholder="0" ng-model="formData.charge"> </td>
+                                    <td><button type="submit" class="btn btn-primary btn-lg" ng-click="addCharge()">Add</button></td>
+                                </tr><table>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+</body>
+</html>
