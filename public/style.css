@@ -1,0 +1,57 @@
+html{
+    overflow-y: scroll;
+}
+
+body{
+    padding-top: 50px;
+    padding-top: 0em
+}
+
+#todo-list{
+    margin-bottom: 30px;
+}
+
+#charge-list{
+    overflow-y: scroll;
+    padding-bottom: 5em;
+}
+
+#budget-selector{
+    width: 95%;
+    border: none;
+    text-align: left;
+}
+
+#money-sign{
+    float: right;
+}
+
+#budget-button{
+    padding-top: .5em;
+    float: left;
+}
+
+#clear-cell{
+    padding-top: 1em;
+    float: right;
+}
+
+.page-header{
+    margin-top: 0px;
+}
+
+.fourty-width{
+    width: 40%;
+}
+
+.navbar{
+    background-color: #ffffff;
+}
+
+.width55{
+    width: 55%;
+}
+
+#budget tr{
+    width: 100%;
+}

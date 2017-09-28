@@ -2,6 +2,7 @@ var BudgetMaster = angular.module('BudgetMaster2000', []);
 
 function mainController($scope, $http) {
     $scope.formData = {};
+    $scope.hideBudgetButton = true;
 
     // when landing on the page, get all todos and show them
     $http.get('/budget/api/charges')
@@ -39,9 +40,7 @@ function mainController($scope, $http) {
                 console.log('Error: ' + data);
             });
 
-        //hide budget button
-        $('#budgetButton').css("visibility","hidden");
-
+        $scope.hideBudgetButton = true;
     };
 
     $scope.clear = function(){
@@ -56,7 +55,7 @@ function mainController($scope, $http) {
     };
 
     $scope.showBudgetButton = function(){
-        $('#budgetButton').css("visibility","visible");
+        $scope.hideBudgetButton = false;
     };
 
 
