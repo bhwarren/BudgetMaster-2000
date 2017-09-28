@@ -14,8 +14,8 @@ Please note that this is a quick and dirty project I wrote in a short amout of t
   - needs a logout button
   - static files should have a better file structure (one directory for every major function). This app is small though, so it's not much of an issue
 
-
-
+<br />
+<br />
 
 **Libraries Used (Node.js):**
   - passport-facebook
@@ -25,7 +25,6 @@ Please note that this is a quick and dirty project I wrote in a short amout of t
 **Libraries Used (Client):**
   - angular 1
   - bootstrap
-  - jquery
 
 
 <img src="https://raw.githubusercontent.com/bhwarren/BudgetMaster-2000/master/Screenshot_20170908-160949.png" alt="Screenshot" width="300px" /> <img src="https://raw.githubusercontent.com/bhwarren/BudgetMaster-2000/master/Screenshot_20170908-144040.png" alt="Adding Screenshot" width="300px" />
